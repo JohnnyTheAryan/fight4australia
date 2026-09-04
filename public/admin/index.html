@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Fight for Australia</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/assets/logo.webp" type="image/webp">
+  <script src="https://cdn.tailwindcss.com" data-cfasync="false"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+<style>
+    .admin-shell { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1.5rem; background:
+      radial-gradient(ellipse 70% 50% at 50% -10%, rgba(0,132,61,0.18), transparent),
+      linear-gradient(180deg, #0a1628 0%, #050b14 100%); }
+    .admin-card { width: 100%; max-width: 24rem; background: #0a1628; border: 1px solid rgba(255,255,255,0.08); border-radius: 1rem; padding: 1.75rem; box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+  </style>
+</head>
+<body class="antialiased">
+  <div class="admin-shell">
+    <div class="admin-card">
+      <div style="text-align:center;margin-bottom:1.5rem;">
+        <img src="/assets/logo.webp" alt="FFA" width="48" height="48" style="margin:0 auto 0.75rem;border-radius:9999px;border:1px solid rgba(255,255,255,0.1);">
+        <h1 style="margin:0;font-size:1.25rem;font-weight:800;">FFA Admin</h1>
+        <p style="margin:0.35rem 0 0;font-size:0.85rem;color:rgba(255,255,255,0.45);">Sign in to manage the site</p>
+      </div>
+
+      <div id="msg" class="hidden" style="margin-bottom:1rem;"></div>
+
+      <form id="login-form">
+        <div style="margin-bottom:1rem;">
+          <label for="username" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);margin-bottom:0.35rem;">Username</label>
+          <input class="form-input" type="text" id="username" name="username" required autocomplete="username" placeholder="admin">
+        </div>
+        <div style="margin-bottom:1.25rem;">
+          <label for="password" style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.55);margin-bottom:0.35rem;">Password</label>
+          <input class="form-input" type="password" id="password" name="password" required autocomplete="current-password" placeholder="••••••••">
+        </div>
+        <button type="submit" id="btn" class="btn-primary" style="width:100%;">Sign in</button>
+      </form>
+
+      <p style="margin:1.25rem 0 0;text-align:center;font-size:0.75rem;color:rgba(255,255,255,0.35);">
+        <a href="/" style="color:rgba(251,191,36,0.8);">← Back to public site</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const API = window.FFA_API || '';
+    (async () => {
+      try {
+        const r = await fetch(API + '/api/admin/me', { credentials: 'include' });
+        if (r.ok) location.href = '/admin/dashboard.html';
+      } catch (e) {}
+    })();
+
+    const form = document.getElementById('login-form');
+    const msg = document.getElementById('msg');
+    const btn = document.getElementById('btn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msg.classList.add('hidden');
+      btn.disabled = true;
+      btn.textContent = 'Signing in…';
+      try {
+        const res = await fetch(API + '/api/admin/login', {
+          method: 'POST',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            username: form.username.value.trim(),
+            password: form.password.value
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.error || 'Login failed');
+        if (data.token) localStorage.setItem('ffa_token', data.token);
+        location.href = '/admin/dashboard.html';
+      } catch (err) {
+        msg.textContent = err.message || 'Login failed. Is the API and database connected?';
+        msg.className = 'form-error';
+        msg.style.marginBottom = '1rem';
+        msg.classList.remove('hidden');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Sign in';
+      }
+    });
+  </script>
+</body>
+</html>
