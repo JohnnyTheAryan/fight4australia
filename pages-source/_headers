@@ -1,0 +1,8 @@
+/*
+  X-Robots-Tag: index, follow, max-image-preview:large
+
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+
+/api/*
+  X-Robots-Tag: noindex, nofollow
