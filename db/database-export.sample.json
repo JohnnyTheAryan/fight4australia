@@ -1,0 +1,100 @@
+{
+  "exported_at": "2026-08-15T14:25:00Z",
+  "database": "fight4australia",
+  "uuid": "2c95a786-174b-4a15-a71b-d0a00a28fdac",
+  "tables": {
+    "subscribers": [
+      {
+        "id": 1,
+        "name": "API Test",
+        "email": "api-test-1786803710@example.com",
+        "city": "Sydney",
+        "interest": "Updates only",
+        "consent": 1,
+        "ip": "34.11.74.3",
+        "user_agent": "curl/8.5.0",
+        "created_at": "2026-08-15 14:21:50",
+        "unsubscribed": 0
+      },
+      {
+        "id": 2,
+        "name": "Bug Test",
+        "email": "bugtest-1786803726@example.com",
+        "city": "Sydney",
+        "interest": "Updates only",
+        "consent": 1,
+        "ip": "34.11.74.3",
+        "user_agent": "curl/8.5.0",
+        "created_at": "2026-08-15 14:22:06",
+        "unsubscribed": 0
+      }
+    ],
+    "messages": [
+      {
+        "id": 1,
+        "name": "API Test",
+        "email": "api-test@example.com",
+        "subject": "Ping",
+        "body": "Backend check",
+        "type": "general",
+        "ip": "34.11.74.3",
+        "read": 0,
+        "created_at": "2026-08-15 14:21:51"
+      },
+      {
+        "id": 2,
+        "name": "Bug Test",
+        "email": "bugtest@example.com",
+        "subject": "Test",
+        "body": "Hello from stress test",
+        "type": "general",
+        "ip": "34.11.74.3",
+        "read": 0,
+        "created_at": "2026-08-15 14:22:07"
+      }
+    ],
+    "posts": [],
+    "events": [],
+    "admins": [
+      {
+        "id": 1,
+        "username": "admin",
+        "password_hash": "[REDACTED]",
+        "display_name": "National Admin",
+        "created_at": "2026-08-15 14:02:25",
+        "last_login": null
+      }
+    ],
+    "sessions": [],
+    "activity_log": [
+      {
+        "id": 1,
+        "actor": "public",
+        "action": "register",
+        "detail": "API Test <api-test-1786803710@example.com> (Sydney)",
+        "created_at": "2026-08-15 14:21:51"
+      },
+      {
+        "id": 2,
+        "actor": "public",
+        "action": "contact:general",
+        "detail": "API Test <api-test@example.com>",
+        "created_at": "2026-08-15 14:21:51"
+      },
+      {
+        "id": 3,
+        "actor": "public",
+        "action": "register",
+        "detail": "Bug Test <bugtest-1786803726@example.com> (Sydney)",
+        "created_at": "2026-08-15 14:22:07"
+      },
+      {
+        "id": 4,
+        "actor": "public",
+        "action": "contact:general",
+        "detail": "Bug Test <bugtest@example.com>",
+        "created_at": "2026-08-15 14:22:07"
+      }
+    ]
+  }
+}
