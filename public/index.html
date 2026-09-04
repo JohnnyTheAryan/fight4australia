@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fight for Australia | Grassroots Nationalist Movement</title>
+  <meta name="description" content="Fight for Australia — A grassroots nationalist movement restoring pride in our identity and heritage. Stand against unsuitable immigration, foreign agendas and woke ideology. Join the March for Australia.">
+  <meta name="theme-color" content="#0a1628">
+  <meta property="og:title" content="Fight for Australia | Grassroots Nationalist Movement">
+  <meta property="og:description" content="Restoring pride in our identity & heritage. Stand against unsuitable immigration, foreign agendas and woke ideology.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fight4australia.org/">
+  <meta property="og:image" content="https://fight4australia.org/assets/logo.webp">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fight for Australia | Grassroots Nationalist Movement">
+  <meta name="twitter:description" content="Restoring pride in our identity & heritage. Stand against unsuitable immigration, foreign agendas and woke ideology.">
+  <meta name="twitter:image" content="https://fight4australia.org/assets/logo.webp">
+  <link rel="apple-touch-icon" href="https://fight4australia.org/assets/logo.webp">
+  <link rel="icon" href="https://fight4australia.org/assets/logo.webp" type="image/webp">
+  <script src="https://cdn.tailwindcss.com" data-cfasync="false"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#050b14', 900: '#0a1628', 800: '#0f2137', 700: '#1a365d' },
+            gold: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' },
+            ausgreen: { 500: '#00843D', 600: '#006b32' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="antialiased">
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="https://fight4australia.org/assets/logo.webp" alt="Fight for Australia" width="36" height="36" />
+        <span class="brand-text">Fight for <span class="brand-gold">Australia</span></span>
+      </a>
+
+      <div class="nav-desktop">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/events.html" class="nav-link">Events</a>
+        <a href="/blog/" class="nav-link">News</a>
+        <a href="/get-involved.html" class="nav-link">Get Involved</a>
+        <a href="/register.html" class="nav-link">Register</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="/events.html" class="nav-cta btn-primary" style="padding:0.5rem 1rem;font-size:0.875rem;border-radius:0.5rem;">Join the March</a>
+        <button id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="/" class="nav-link active">Home</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/events.html" class="nav-link">Events</a>
+      <a href="/blog/" class="nav-link">News</a>
+      <a href="/get-involved.html" class="nav-link">Get Involved</a>
+      <a href="/register.html" class="nav-link">Register</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+      <a href="/register.html" class="btn-primary">Register</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-gradient">
+    <div class="star" style="top:16%;left:10%">✦</div>
+    <div class="star" style="top:24%;left:82%">✦</div>
+    <div class="star" style="top:58%;left:88%">✦</div>
+    <div class="star" style="top:72%;left:6%">✦</div>
+
+    <div class="hero-content">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-gold-400 mb-8">
+        <span class="w-2 h-2 rounded-full bg-ausgreen-500 animate-pulse"></span>
+        Grassroots Nationalist Movement
+      </div>
+
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.95] mb-6">
+        FIGHT FOR<br>
+        <span class="text-gradient">AUSTRALIA</span>
+      </h1>
+
+      <p class="text-xl sm:text-2xl text-white/75 max-w-2xl mx-auto mb-4 font-medium">
+        Restoring pride in our identity &amp; heritage
+      </p>
+
+      <p class="text-lg text-white/50 max-w-xl mx-auto mb-12 leading-relaxed">
+        We stand strong against unsuitable immigration, foreign agendas and woke ideology.<br class="hidden sm:block">
+        Australia belongs to the Australian people.
+      </p>
+
+      
+      <div id="countdown" class="countdown">
+        <div class="cd-box">
+          <div class="cd-num" id="cd-days">—</div>
+          <div class="cd-label">Days</div>
+        </div>
+        <div class="cd-box">
+          <div class="cd-num" id="cd-hours">—</div>
+          <div class="cd-label">Hours</div>
+        </div>
+        <div class="cd-box">
+          <div class="cd-num" id="cd-mins">—</div>
+          <div class="cd-label">Mins</div>
+        </div>
+        <div class="cd-box">
+          <div class="cd-num" id="cd-secs">—</div>
+          <div class="cd-label">Secs</div>
+        </div>
+      </div>
+      <p id="cd-city-label" class="mt-4 text-sm text-white/50">Countdown to march start</p>
+      <label class="sr-only" for="cd-city">Your city</label>
+      <select id="cd-city" class="form-input mt-3 mx-auto block max-w-xs text-sm" style="background:#0a1628;border:1px solid rgba(255,255,255,0.12);color:#fff;padding:0.5rem 0.75rem;border-radius:0.5rem;">
+        <option value="sydney">Sydney — 12:00 AEST</option>
+        <option value="melbourne">Melbourne — 12:00 AEST</option>
+        <option value="brisbane">Brisbane — 12:00 AEST</option>
+        <option value="canberra">Canberra — 12:00 AEST</option>
+        <option value="adelaide">Adelaide — 12:00 ACST</option>
+        <option value="perth">Perth — 13:00 AWST</option>
+        <option value="hobart">Hobart — 12:00 AEST</option>
+      </select>
+
+      <div class="hero-ctas">
+        <a href="/events.html" class="btn-primary text-lg px-8 py-4 rounded-xl w-full sm:w-auto">
+          March with Us — 30 August
+        </a>
+        <a href="/about.html" class="btn-secondary text-lg px-8 py-4 rounded-xl w-full sm:w-auto">
+          Our Mission
+        </a>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-wrap items-center justify-center gap-6 text-sm text-white/40">
+        <span>Nationwide marches</span>
+        <span class="hidden sm:inline">•</span>
+        <span>Community action</span>
+        <span class="hidden sm:inline">•</span>
+        <span>Australian pride</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="section-divider"></div>
+
+  <!-- Mission Snapshot -->
+  <section class="py-20 sm:py-28 bg-navy-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">What We Stand For</h2>
+        <p class="text-white/60 max-w-2xl mx-auto text-lg">
+          A grassroots movement of Australians who refuse to watch our nation, culture and future be sold off.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card-glow bg-navy-900 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-ausgreen-500/20 flex items-center justify-center text-2xl mb-5">🛡️</div>
+          <h3 class="text-xl font-bold mb-3 text-gold-400">National Identity</h3>
+          <p class="text-white/60 leading-relaxed">
+            Restore pride in Australian heritage, history and culture. Our identity is not a museum piece — it is the foundation we pass to the next generation.
+          </p>
+        </div>
+
+        <div class="card-glow bg-navy-900 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center text-2xl mb-5">🛂</div>
+          <h3 class="text-xl font-bold mb-3 text-gold-400">Sovereign Borders</h3>
+          <p class="text-white/60 leading-relaxed">
+            End unsuitable mass immigration. Australia is our home, not an economic zone for international capital. Demand remigration and prioritise our people.
+          </p>
+        </div>
+
+        <div class="card-glow bg-navy-900 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-2xl mb-5">🗣️</div>
+          <h3 class="text-xl font-bold mb-3 text-gold-400">Free Speech</h3>
+          <p class="text-white/60 leading-relaxed">
+            Defend the right to speak freely. Reject the uniparty’s censorship laws that silence dissent and punish political expression.
+          </p>
+        </div>
+
+        <div class="card-glow bg-navy-900 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center text-2xl mb-5">⚔️</div>
+          <h3 class="text-xl font-bold mb-3 text-gold-400">Against Woke Ideology</h3>
+          <p class="text-white/60 leading-relaxed">
+            Stand firm against foreign agendas and cultural Marxism that seek to divide Australians and erase our foundations.
+          </p>
+        </div>
+
+        <div class="card-glow bg-navy-900 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-2xl mb-5">🤝</div>
+          <h3 class="text-xl font-bold mb-3 text-gold-400">Community Power</h3>
+          <p class="text-white/60 leading-relaxed">
+            Build real networks of Australians who organise, march, sticker, volunteer and refuse to be silenced. Grassroots strength over elite control.
+          </p>
+        </div>
+
+        <div class="card-glow bg-navy-900 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center text-2xl mb-5">🇦🇺</div>
+          <h3 class="text-xl font-bold mb-3 text-gold-400">Australia First</h3>
+          <p class="text-white/60 leading-relaxed">
+            Every policy, every decision, every fight must put the Australian people first. No more apologies for existing.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/about.html" class="btn-secondary px-6 py-3 rounded-xl font-semibold">Read the full mission →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Next March CTA -->
+  <section class="py-20 sm:py-28 bg-navy-900/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <div class="inline-block px-4 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-sm font-semibold mb-4">
+          NEXT NATIONWIDE ACTION
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black mb-4">March for Australia</h2>
+        <p class="text-2xl text-gold-400 font-bold mb-3">30 August 2026</p>
+        <p class="text-white/60 max-w-2xl mx-auto text-lg">
+          Nationwide marches demanding free speech, an end to uniparty censorship, and a future for the Australian people.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+        <a href="/events/melbourne.html" class="city-card rounded-xl p-5 group">
+          <div class="text-gold-400 font-bold text-lg group-hover:underline">Melbourne</div>
+          <div class="text-white/50 text-sm mt-1">12:00 – 14:00 · Flinders Street Station Steps</div>
+        </a>
+        <a href="/events/sydney.html" class="city-card rounded-xl p-5 group">
+          <div class="text-gold-400 font-bold text-lg group-hover:underline">Sydney</div>
+          <div class="text-white/50 text-sm mt-1">12:00 – 14:00 · Belmore Park, Haymarket</div>
+        </a>
+        <a href="/events/brisbane.html" class="city-card rounded-xl p-5 group">
+          <div class="text-gold-400 font-bold text-lg group-hover:underline">Brisbane</div>
+          <div class="text-white/50 text-sm mt-1">12:00 – 14:00 · Roma Street Parklands</div>
+        </a>
+        <a href="/events/adelaide.html" class="city-card rounded-xl p-5 group">
+          <div class="text-gold-400 font-bold text-lg group-hover:underline">Adelaide</div>
+          <div class="text-white/50 text-sm mt-1">12:00 – 14:00 · Rundle Park</div>
+        </a>
+        <a href="/events/perth.html" class="city-card rounded-xl p-5 group">
+          <div class="text-gold-400 font-bold text-lg group-hover:underline">Perth</div>
+          <div class="text-white/50 text-sm mt-1">13:00 – 15:00 · Langley Park</div>
+        </a>
+        <a href="/events/canberra.html" class="city-card rounded-xl p-5 group">
+          <div class="text-gold-400 font-bold text-lg group-hover:underline">Canberra</div>
+          <div class="text-white/50 text-sm mt-1">12:00 – 14:00 · Parliament House Lawns</div>
+        </a>
+      </div>
+
+      <div class="text-center">
+        <a href="/events.html" class="btn-primary text-lg px-8 py-4 rounded-xl inline-block">
+          Full Event Details →
+        </a>
+        <p class="mt-4 text-white/40 text-sm">Official march site: <a href="https://marchforaustralia.org/" target="_blank" rel="noopener" class="text-gold-400/80 hover:text-gold-400">marchforaustralia.org</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Get Involved Teaser -->
+  <section class="py-20 sm:py-28 bg-navy-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">This Movement Runs on Volunteers</h2>
+      <p class="text-white/60 max-w-2xl mx-auto text-lg mb-10">
+        Stickering, organising, content, showing up. Every action counts. We are building real community power across Australia.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/get-involved.html" class="btn-primary text-lg px-8 py-4 rounded-xl">Get Involved</a>
+        <a href="/contact.html" class="btn-secondary text-lg px-8 py-4 rounded-xl">Contact the Team</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Socials -->
+  <section class="py-16 bg-navy-900/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <h3 class="text-xl font-bold mb-8 text-white/80">Follow the Movement</h3>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="https://x.com/FightForAust" target="_blank" rel="noopener" class="btn-secondary px-5 py-2.5 rounded-xl font-medium text-sm">𝕏 / Twitter</a>
+        <a href="https://t.me/FightForAustralia" target="_blank" rel="noopener" class="btn-secondary px-5 py-2.5 rounded-xl font-medium text-sm">Telegram</a>
+        <a href="https://instagram.com/fightforaustralia26/" target="_blank" rel="noopener" class="btn-secondary px-5 py-2.5 rounded-xl font-medium text-sm">Instagram</a>
+        <a href="https://facebook.com/FightForAust" target="_blank" rel="noopener" class="btn-secondary px-5 py-2.5 rounded-xl font-medium text-sm">Facebook</a>
+        <a href="https://tiktok.com/@fightforaustralia1788" target="_blank" rel="noopener" class="btn-secondary px-5 py-2.5 rounded-xl font-medium text-sm">TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 bg-navy-950 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-2.5 font-bold">
+          <img src="https://fight4australia.org/assets/logo.webp" alt="" width="28" height="28" class="h-7 w-7 rounded-full object-cover" />
+          <span>Fight for Australia</span>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-white/50">
+          <a href="/about.html">About</a>
+          <a href="/events.html">Events</a>
+          <a href="/blog/">News</a>
+          <a href="/get-involved.html">Get Involved</a>
+          <a href="/register.html">Register</a>
+          <a href="/contact.html">Contact</a>
+        
+      </div>
+      <div class="mt-8 pt-8 border-t border-white/5 text-center text-white/30 text-sm">
+        <p>© 2026 Fight for Australia. Grassroots. Nationalist. Australian.</p>
+        <p class="mt-2">Australia for the Australian people.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    // Smooth scroll for same-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+
+  <script data-cfasync="false">
+    (function () {
+      // March start per city (local wall time → fixed offset for 30 Aug 2026, standard time)
+      var CITIES = {
+        sydney:    { name: 'Sydney',    zone: 'Australia/Sydney',    start: '2026-08-30T12:00:00+10:00', label: '12:00 AEST' },
+        melbourne: { name: 'Melbourne', zone: 'Australia/Melbourne', start: '2026-08-30T12:00:00+10:00', label: '12:00 AEST' },
+        brisbane:  { name: 'Brisbane',  zone: 'Australia/Brisbane',  start: '2026-08-30T12:00:00+10:00', label: '12:00 AEST' },
+        canberra:  { name: 'Canberra',  zone: 'Australia/Sydney',    start: '2026-08-30T12:00:00+10:00', label: '12:00 AEST' },
+        adelaide:  { name: 'Adelaide',  zone: 'Australia/Adelaide',  start: '2026-08-30T12:00:00+09:30', label: '12:00 ACST' },
+        perth:     { name: 'Perth',     zone: 'Australia/Perth',     start: '2026-08-30T13:00:00+08:00', label: '13:00 AWST' },
+        hobart:    { name: 'Hobart',    zone: 'Australia/Hobart',    start: '2026-08-30T12:00:00+10:00', label: '12:00 AEST' }
+      };
+
+      function detectCity() {
+        try {
+          var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+          if (tz === 'Australia/Adelaide' || tz === 'Australia/Broken_Hill') return 'adelaide';
+          if (tz === 'Australia/Perth') return 'perth';
+          if (tz === 'Australia/Brisbane' || tz === 'Australia/Lindeman') return 'brisbane';
+          if (tz === 'Australia/Hobart' || tz === 'Australia/Currie') return 'hobart';
+          if (tz === 'Australia/Melbourne') return 'melbourne';
+          if (tz === 'Australia/Sydney' || tz === 'Australia/Lord_Howe' || tz === 'Australia/ACT') return 'sydney';
+          if (tz.indexOf('Australia/') === 0) return 'sydney';
+        } catch (e) {}
+        return 'sydney';
+      }
+
+      var select = document.getElementById('cd-city');
+      var labelEl = document.getElementById('cd-city-label');
+      var key = localStorage.getItem('ffa_cd_city') || detectCity();
+      if (!CITIES[key]) key = 'sydney';
+      if (select) select.value = key;
+
+      var targetMs = new Date(CITIES[key].start).getTime();
+
+      function setLabel() {
+        var c = CITIES[key];
+        if (labelEl) {
+          labelEl.textContent = 'Countdown to ' + c.name + ' march start — ' + c.label + ', 30 Aug 2026';
+        }
+      }
+
+      function tick() {
+        var now = Date.now();
+        var diff = Math.max(0, targetMs - now);
+        var days = Math.floor(diff / 86400000); diff -= days * 86400000;
+        var hours = Math.floor(diff / 3600000); diff -= hours * 3600000;
+        var mins = Math.floor(diff / 60000); diff -= mins * 60000;
+        var secs = Math.floor(diff / 1000);
+        var el = function (id) { return document.getElementById(id); };
+        if (el('cd-days')) {
+          el('cd-days').textContent = days;
+          el('cd-hours').textContent = String(hours).padStart(2, '0');
+          el('cd-mins').textContent = String(mins).padStart(2, '0');
+          el('cd-secs').textContent = String(secs).padStart(2, '0');
+        }
+      }
+
+      function applyCity(next) {
+        if (!CITIES[next]) return;
+        key = next;
+        localStorage.setItem('ffa_cd_city', key);
+        targetMs = new Date(CITIES[key].start).getTime();
+        setLabel();
+        tick();
+      }
+
+      if (select) {
+        select.addEventListener('change', function () {
+          applyCity(select.value);
+        });
+      }
+
+      setLabel();
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
+
+  <script data-cfasync="false">
+    (function () {
+      function setupMenu() {
+        var btn = document.getElementById('menu-btn');
+        var menu = document.getElementById('mobile-menu');
+        if (!btn || !menu || btn.dataset.menuBound === '1') return;
+        btn.dataset.menuBound = '1';
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          menu.classList.toggle('open');
+          var open = menu.classList.contains('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupMenu);
+      } else {
+        setupMenu();
+      }
+    })();
+  </script>
+</body>
+</html>
