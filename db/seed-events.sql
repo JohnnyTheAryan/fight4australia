@@ -1,0 +1,8 @@
+-- Run once in D1 Console after schema is applied
+INSERT OR IGNORE INTO events (slug, title, city, state, location, starts_at, ends_at, description, status, external_url) VALUES
+('sydney-2026-08-30', 'March for Australia — Sydney', 'Sydney', 'NSW', 'Belmore Park, Haymarket', '2026-08-30T12:00:00+10:00', '2026-08-30T14:00:00+10:00', 'Nationwide march for free speech.', 'upcoming', 'https://fight4australia.org/events/sydney.html'),
+('melbourne-2026-08-30', 'March for Australia — Melbourne', 'Melbourne', 'VIC', 'Flinders Street Station Steps', '2026-08-30T12:00:00+10:00', '2026-08-30T14:00:00+10:00', 'Nationwide march for free speech.', 'upcoming', 'https://fight4australia.org/events/melbourne.html'),
+('brisbane-2026-08-30', 'March for Australia — Brisbane', 'Brisbane', 'QLD', 'Roma Street Parklands', '2026-08-30T12:00:00+10:00', '2026-08-30T14:00:00+10:00', 'Nationwide march for free speech.', 'upcoming', 'https://fight4australia.org/events/brisbane.html'),
+('adelaide-2026-08-30', 'March for Australia — Adelaide', 'Adelaide', 'SA', 'Rundle Park', '2026-08-30T12:00:00+09:30', '2026-08-30T14:00:00+09:30', 'Nationwide march for free speech.', 'upcoming', 'https://fight4australia.org/events/adelaide.html'),
+('perth-2026-08-30', 'March for Australia — Perth', 'Perth', 'WA', 'Langley Park', '2026-08-30T13:00:00+08:00', '2026-08-30T15:00:00+08:00', 'Nationwide march for free speech.', 'upcoming', 'https://fight4australia.org/events/perth.html'),
+('canberra-2026-08-30', 'March for Australia — Canberra', 'Canberra', 'ACT', 'Parliament House Lawns', '2026-08-30T12:00:00+10:00', '2026-08-30T14:00:00+10:00', 'Nationwide march for free speech.', 'upcoming', 'https://fight4australia.org/events/canberra.html');
